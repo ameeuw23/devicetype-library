@@ -1,0 +1,28 @@
+manufacturer: TP-Link
+model: ES205G v1.0
+slug: tp-link-es205g-v1-0
+part_number: ES205G
+u_height: 0
+is_full_depth: false
+power-ports:
+  - name: PS1
+    type: dc-terminal
+    maximum_draw: 5
+interfaces:
+  - name: port1
+    type: 1000base-t
+    mgmt_only: false
+  - name: port2
+    type: 1000base-t
+    mgmt_only: false
+  - name: port3
+    type: 1000base-t
+    mgmt_only: false
+  - name: port4
+    type: 1000base-t
+    mgmt_only: false
+  - name: port5
+    type: 1000base-t
+    mgmt_only: false
+rear-ports: []
+device-bays: []

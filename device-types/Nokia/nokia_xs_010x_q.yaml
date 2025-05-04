@@ -1,0 +1,111 @@
+---
+manufacturer: Nokia
+model: XS-010X-Q
+slug: nokia-xs-010x-q
+part_number: XS-010X-Q
+u_height: 1
+is_full_depth: false
+comments: "Nokia XS-010X-Q met XGS-PON WAN-connectiviteit"
+
+# Console poorten
+console-ports:
+  - name: console
+    type: rj-45
+
+# Power poorten
+power-ports:
+  - name: PS1
+    type: iec-60320-c14
+    maximum_draw: 75
+    allocated_draw: 50
+
+# Network interfaces
+interfaces:
+  # WAN Interface (XGS-PON)
+  - name: pon0
+    type: xgs-pon
+    mgmt_only: false
+    description: "XGS-PON WAN Interface"
+  
+  # LAN Interfaces
+  - name: eth0
+    type: 1000base-t
+    mgmt_only: false
+    description: "Gigabit Ethernet Port 1"
+  - name: eth1
+    type: 1000base-t
+    mgmt_only: false
+    description: "Gigabit Ethernet Port 2"
+  - name: eth2
+    type: 1000base-t
+    mgmt_only: false
+    description: "Gigabit Ethernet Port 3"
+  - name: eth3
+    type: 1000base-t
+    mgmt_only: false
+    description: "Gigabit Ethernet Port 4"
+  
+  # Management interface
+  - name: mgmt
+    type: 1000base-t
+    mgmt_only: true
+    description: "Management Interface"
+
+# Front panel layout
+front-ports:
+  - name: pon-front
+    type: lc
+    rear_port: pon0
+    rear_port_position: 1
+    description: "XGS-PON WAN Connector"
+  - name: eth0-front
+    type: 8p8c
+    rear_port: eth0
+    rear_port_position: 1
+  - name: eth1-front
+    type: 8p8c
+    rear_port: eth1
+    rear_port_position: 1
+  - name: eth2-front
+    type: 8p8c
+    rear_port: eth2
+    rear_port_position: 1
+  - name: eth3-front
+    type: 8p8c
+    rear_port: eth3
+    rear_port_position: 1
+  - name: mgmt-front
+    type: 8p8c
+    rear_port: mgmt
+    rear_port_position: 1
+    description: "Management Port"
+
+# Achterpoorten (mapping)
+rear-ports:
+  - name: pon0
+    type: lc
+    positions: 1
+  - name: eth0
+    type: 8p8c
+    positions: 1
+  - name: eth1
+    type: 8p8c
+    positions: 1
+  - name: eth2
+    type: 8p8c
+    positions: 1
+  - name: eth3
+    type: 8p8c
+    positions: 1
+  - name: mgmt
+    type: 8p8c
+    positions: 1
+
+# Device bay (indien deze apparaten in een ander apparaat kunnen worden geplaatst)
+device-bays: []
+
+# Modulaire bay (voor uitbreidingsmodules)
+module-bays: []
+
+# Power outlets
+power-outlets: []

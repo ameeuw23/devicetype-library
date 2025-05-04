@@ -1,0 +1,61 @@
+manufacturer: TP-Link
+model: ER7412-M2
+slug: tp-link-er7412-m2
+part_number: ER7412-M2
+u_height: 1
+is_full_depth: true
+console-ports:
+  - name: console
+    type: rj-45
+power-ports:
+  - name: PS1
+    type: iec-60320-c14
+    maximum_draw: 50
+interfaces:
+  - name: ge1
+    type: 1000base-t
+    mgmt_only: false
+  - name: ge2
+    type: 1000base-t
+    mgmt_only: false
+  - name: ge3
+    type: 1000base-t
+    mgmt_only: false
+  - name: ge4
+    type: 1000base-t
+    mgmt_only: false
+  - name: ge5
+    type: 1000base-t
+    mgmt_only: false
+  - name: ge6
+    type: 1000base-t
+    mgmt_only: false
+  - name: ge7
+    type: 1000base-t
+    mgmt_only: false
+  - name: ge8
+    type: 1000base-t
+    mgmt_only: false
+  - name: ge9
+    type: 1000base-t
+    mgmt_only: false
+  - name: ge10
+    type: 1000base-t
+    mgmt_only: false
+  - name: ge11
+    type: 1000base-t
+    mgmt_only: false
+  - name: ge12
+    type: 1000base-t
+    mgmt_only: false
+  - name: sfp1
+    type: 1000base-x-sfp
+    mgmt_only: false
+  - name: sfp2
+    type: 1000base-x-sfp
+    mgmt_only: false
+  - name: mgmt
+    type: 1000base-t
+    mgmt_only: true
+rear-ports: []
+device-bays: []
